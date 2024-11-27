@@ -1,0 +1,24 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs/
+*.log
+
+# Build files
+dist/
+build/
+
+# IDE settings
+.vscode/
+.idea/
+
+# MacOS-specific files
+.DS_Store
+
+# Tailwind CSS generated files
+css/tailwind-build.css
+css/tailwind-runtime.css
