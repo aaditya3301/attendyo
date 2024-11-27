@@ -44,17 +44,16 @@ Ensure you have the following installed on your system:
    npm install
    ```
 
-3. Start the development server:
+3. Start the Tailwind development process:
    ```bash
-   npm run start
+   npm run start:tailwind
    ```
+4. Open your project in VS Code and use the "Go Live" extension to launch the site locally.
 
-4. Open your browser and navigate to:
-   ```
-   http://localhost:3000
-   ```
-
----
+   The "Go Live" button is available in the bottom-right corner of VS Code after installing       the Live Server extension.
+   It will automatically serve your site on a local development server and open it in your        browser.
+   
+   ---
 
 ## Tailwind CSS Usage
 
