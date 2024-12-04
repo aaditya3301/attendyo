@@ -35,8 +35,8 @@ Ensure you have the following installed on your system:
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone <https://github.com/aaditya3301/attendyo.git>
-   cd <attendyo>
+   git clone https://github.com/aaditya3301/attendyo.git
+   cd attendyo
    ```
 
 2. Install dependencies:
