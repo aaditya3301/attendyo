@@ -243,32 +243,6 @@ gsap.to("#dashboard", {
 
 })
 
-const faqAccordion = document.querySelectorAll('.faq-accordion')
-
-faqAccordion.forEach(function (btn) {
-    btn.addEventListener('click', function () {
-        this.classList.toggle('active')
-
-        // Toggle 'rotate' class to rotate the arrow
-        let content = this.nextElementSibling
-        let icon = this.querySelector(".bi-plus")
-
-        // content.classList.toggle('!tw-hidden')
-        if (content.style.maxHeight === '240px') {
-            content.style.maxHeight = '0px'
-            content.style.padding = '0px 18px'
-            icon.style.transform = "rotate(0deg)"
-            
-        } else {
-            content.style.maxHeight = '240px'
-            content.style.padding = '20px 18px'
-            icon.style.transform = "rotate(45deg)"
-        }
-    })
-})
-
-
-
 // ------------- reveal section animations ---------------
 
 const sections = gsap.utils.toArray("section")

@@ -1,4 +1,5 @@
 // Create a new renderer and append it to the coin-container
+
 const coinContainer = document.getElementById('coin-container');
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(500, 500); // Set the size of the renderer to match the container

@@ -1,7 +1,7 @@
 {
-  "name": "attendance",
+  "name": "attendyo",
   "version": "1.0.0",
-  "description": "help students",
+  "description": "assist students",
   "main": "index.js",
   "scripts": {
     "start:tailwind": "cross-env NODE_ENV=development tailwindcss --postcss -i css/tailwind.css -o css/tailwind-runtime.css -w",

@@ -1,3 +1,4 @@
+
 // Dark mode functionality
 if (localStorage.getItem('color-mode') === 'dark' || (!('color-mode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
   document.documentElement.classList.add('tw-dark')
@@ -26,59 +27,6 @@ function updateToggleModeBtn() {
   }
 }
 
-const navToggle = document.querySelector("#nav-dropdown-toggle-0")
-const navDropdown = document.querySelector("#nav-dropdown-list-0")
-
-function navMouseLeave() {
-  setTimeout(closeNavDropdown, 100)
-}
-
-function openNavDropdown(event) {
-  navDropdown.classList.add("tw-opacity-100", "tw-scale-100",
-    "max-lg:tw-min-h-[450px]", "max-lg:!tw-h-fit", "tw-min-w-[320px]")
-
-  navDropdown.setAttribute("data-open", true)
-}
-
-function closeNavDropdown(event) {
-  if (navDropdown.matches(":hover")) {
-    return
-  }
-
-  navDropdown.classList.remove("tw-opacity-100", "tw-scale-100",
-    "max-lg:tw-min-h-[450px]", "tw-min-w-[320px]", "max-lg:!tw-h-fit")
-
-  navDropdown.setAttribute("data-open", false)
-}
-
-// Add event listeners
-if (window.innerWidth > 1024) {
-  navToggle.addEventListener("mouseenter", openNavDropdown)
-  navToggle.addEventListener("mouseleave", navMouseLeave)
-  navDropdown.addEventListener("mouseleave", closeNavDropdown)
-}
-
-window.addEventListener("resize", () => {
-  if (window.innerWidth > 1024) {
-    navToggle.addEventListener("mouseenter", openNavDropdown)
-    navToggle.addEventListener("mouseleave", navMouseLeave)
-    navDropdown.addEventListener("mouseleave", closeNavDropdown)
-  } else {
-    navToggle.removeEventListener("mouseenter", openNavDropdown)
-    navToggle.removeEventListener("mouseleave", navMouseLeave)
-    navDropdown.removeEventListener("mouseleave", closeNavDropdown)
-  }
-})
-
-function scrollToExperience(event) {
-  if (window.location.pathname.endsWith('index.html') || window.location.pathname === '/') {
-    event.preventDefault();
-    const experienceSection = document.getElementById('experience');
-    if (experienceSection) {
-      experienceSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  }
-}
 document.addEventListener("DOMContentLoaded", () => {
   const totalAttendanceEl = document.getElementById("total-attendance");
   const minimumAttendanceEl = document.getElementById("minimum-attendance");
@@ -276,7 +224,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
 
         <!-- Missed Button -->
-        <button class="missed-btn tw-bg-red-500 tw-text-white tw-rounded-md tw-py-2 tw-px-4 tw-mt-4" data-id="${subject.id}">
+        <button class="missed-btn p-5 tw-bg-red-500 tw-text-white tw-rounded-md tw-py-2 tw-px-4 tw-mt-4" data-id="${subject.id}">
           Missed
         </button>
           </div>
